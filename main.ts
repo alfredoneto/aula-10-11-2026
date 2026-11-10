@@ -8,8 +8,8 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
     pontos += 1
     info.setScore(pontos)
 })
-let moeda: Sprite = null
 let pontos = 0
+let moeda: Sprite = null
 let jogador: Sprite = null
 jogador = sprites.create(img`
     . . . . . f f f f f f . . . . . 
@@ -32,7 +32,6 @@ jogador = sprites.create(img`
 jogador.setPosition(80, 60)
 controller.moveSprite(jogador, 100, 0)
 jogador.ay = 300
-info.setScore(pontos)
 scene.setBackgroundImage(img`
     fffffffcbccffffffffffcfbddddddddddd111111111111111111111111dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddbffcddffffffcfcfffff
     fffffffccffffcffffffbfddddddddd11111111111111111111111111111111ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddfccdbffffffffffffff
